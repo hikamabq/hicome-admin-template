@@ -115,7 +115,7 @@
 .menu-head{
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.5);
-	font-size: .7rem;
+	font-size: .65rem;
 	font-weight: 500;
 	margin-bottom: .8rem;
 	margin-top: 1rem;
@@ -225,6 +225,7 @@ header{
 	background: #efefef;
 	cursor: pointer;
 }
+
 
 .main-content{
 	margin-left: 260px;
