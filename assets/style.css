@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root{
 	--color-main: #1a202e;
@@ -23,9 +23,15 @@
 	transition: 500ms;
 }
 
+[role=button-drop]{
+	display: none;
+}
+[role=button-drop]:checked ~ .toggle-dropdown{
+	display: block;
+}
+
 #menu-drop{
 	display: none;
-	transition: background 300ms;
 }
 #menu-drop:checked ~ .toggle-dropdown{
 	display: block;
