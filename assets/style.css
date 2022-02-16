@@ -7,8 +7,9 @@
 	--color-toggle: #1d2438;
 	--color-active: #f93058;
 	--color-hover: #f93058;
-	--color-li: rgba(255, 255, 255, 0.7);
+	--color-li: rgba(255, 255, 255, 0.5);
 	--color-span: #fff;
+	--color-blue: #1e8cff;
 	--color-content: #f4f7fc;
 
 }
@@ -21,6 +22,7 @@
 	margin: 0;
 	padding: 0;
 	font-size: 0.9rem;
+	/*line-height: 20px;*/
 }
 
 body, label, header, main, footer{
@@ -140,7 +142,7 @@ label .la-angle-down{
 	margin-top: 1rem;
 }
 .menu-head span{
-	font-size: .75rem;
+	font-size: .65rem;
 }
 .sidebar-menu ul{
 	margin-bottom: 1.5rem;
@@ -162,18 +164,19 @@ label .la-angle-down{
 }
 
 .sidebar-menu li a:hover{
-	background: var(--color-hover);
+	/*background: var(--color-hover);*/
 	border-radius: 3px;
 	color: #fff;
 	text-decoration: none;
 }
-.sidebar-menu li a span{
+.sidebar-menu li a i{
 	font-size: 1.5rem;
 	display: inline-block;
 	margin-right: .8rem;
+	color: var(--color-blue);
 }
-.sidebar-menu li a:hover span{
-	color: var(--color-span) !important;
+.sidebar-menu li a:hover i{
+	/*color: var(--color-span) !important;*/
 	text-decoration: none;
 }
 
@@ -188,32 +191,34 @@ label .la-angle-down{
 	transition: background 300ms;
 }
 .sidebar-menu li label:hover{
-	background: var(--color-hover);
+	/*background: var(--color-hover);*/
 	border-radius: 3px;
 	cursor: pointer;
 	color: #fff;
 }
-.sidebar-menu li label span{
+.sidebar-menu li label i{
 	font-size: 1.5rem;
 	display: inline-block;
 	margin-right: .8rem;
+	color: var(--color-blue);
 }
-.sidebar-menu li label i{
+.sidebar-menu li label i#dropdown{
 	font-size: 1.2rem;
 	display: inline-block;
 	position: absolute;
-	right: 2rem;
+	right: 1.2rem;
+	color: var(--color-li);
 }
-.sidebar-menu li label:hover span{
-	color: var(--color-span) !important;
+.sidebar-menu li label:hover i#dropdown{
+	color: #fff;
 }
 
 .active{
-	background: var(--color-active);
+	background: var(--color-toggle);
 	border-radius: 3px;
 	color: #fff !important;
 }
-.active span{
+.active i{
 	color: var(--color-span);
 }
 
@@ -240,7 +245,7 @@ header{
 	font-size: 1.5rem;
 	border-radius: 50%;
 }
-.menu-toggle label span{
+.menu-toggle label i{
 	height: 60px;
 	width: 60px;
 	display: grid;
@@ -248,7 +253,7 @@ header{
 	font-size: 1.4rem;
 	border-radius: 50%;
 }
-.header-icons span{
+.header-icons i{
 	display: inline-block;
 	margin-left: .7rem;
 	font-size: 1.4rem;
@@ -285,7 +290,7 @@ main{
 	font-weight: 600;
 }
 
-.header-actions button span{
+.header-actions button i{
 	font-size: 1.2rem;
 	margin-right: .6rem;
 }
@@ -375,471 +380,4 @@ main{
 	}
 
 
-}
-
-
-/*custom style*/
-.rekap span{
-	display: block;
-}
-.orange-login{
-	background: #fb8c00;
-	height: 250px;
-}
-.card{
-	margin-bottom: 10px;
-}
-.t-box{
-	/*border: 1px solid #ddd;*/
-	padding: 15px;
-	height: auto;
-	background: #fff;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	box-shadow: 0 .145rem .15rem 0 rgba(98,99,99,.2);
-}
-.h100{
-	/*height: 130px;*/
-	min-height: 150px;
-}
-.h50{
-	/*height: 130px;*/
-	min-height: 75px;
-}
-.t-box h3{
-	display: inline-block;
-	font-weight: bold;
-	color: #555;
-}
-.t-box h5{
-	display: block;
-}
-.t-box h6{
-	margin-top: 5px;
-	display: block;
-	font-size: 0.9em;
-	color: #555;
-	/*color: #2196f3;*/
-}
-.t-box span{
-	display: inline-block;
-	width: 150px;
-	/*padding-right: 20px;*/
-}
-.t-box .w130{
-	width: 100px;
-	/*padding-right: 20px;*/
-}
-.t-box .row .col-md-4{
-	/*margin-bottom: 20px;*/
-}
-.form-control, .form-control:focus{
-	/*background: transparent;*/
-}
-.help-block{
-	color: red;
-}
-.nota-online{
-	font-size: 0.9em;
-	width: 100%;
-	padding: 10px;
-	/*border-radius: 10px;*/
-	background: #fff;
-	border: 2px solid #55b5c6;
-}
-
-.nota-online table{
-	width: 100%;
-}
-
-.nota-online table td{
-	padding: 3px;
-}
-input.tiga{
-	width: 30% !important;
-}
-.nota-online input{
-	background: transparent;
-	border:1px solid #418591;
-	width: 100%;
-	padding: 5px;
-}
-.jdl{
-	background: #9ae1ed;
-	padding: 3px 20px 3px 10px;
-	color: #326771;
-	border-radius: 0px 0px 50px 0px;
-}
-.transaksi-form{
-	margin: 0 auto;
-	background: #fff;
-	width: 75%;
-	padding: 20px;
-}
-.bg-abu{
-	/*background: #d7dada !important;*/
-}
-.bg-abu a{
-	color: #000;
-}
-.bg-purple{
-	background: #6120da;
-	color: #fff;
-}
-.btn-putih{
-	/*background: #222e3c;*/
-	background: #aaa;
-	color: #fff;
-	/*border: 1px solid #ccc;*/
-}
-/*.content{
-	background: #fff;
-	background: #f4f7fc;
-}*/
-.btn-logout{
-	display: block;
-	width: 100%;
-	text-align: left;
-	padding-left: 25px;
-}
-.site-login{
-	background: #fff;
-	width: 100%;
-	padding: 20px;
-	/*margin: 20% auto;*/
-}
-.gelap{
-	background: #222e3c;
-	height: 400px;
-	width: 100%;
-}
-.menu-index{
-	/*border: 1px solid #ddd;*/
-	padding: 20px;
-	background: #fff;
-	margin-bottom: 20px;
-	border-radius: 3px;
-	box-shadow: 0 .145rem .15rem 0 rgba(58,59,69,.2);
-}
-.menu-index h3{
-	margin: 0;
-	padding: 0;
-}
-.b-s{
-	display: block;
-	padding-top: 10px !important;
-}
-.b-n:hover{
-	background: #ccc;
-}
-.sethr{
-	padding: 0;
-	margin: 0;
-	background: #aaa;
-}
-.spasi{
-	padding: 10px 0px;
-	display: block;
-	/*background: red;*/
-	height: 10px;
-}
-.tb-kecil{
-	font-size: 0.9em;
-	display: block;
-}
-.label-sys{
-	display: block;
-	font-weight: bold;
-}
-.dash{
-	height: 150px;
-	background: #0a5df3;
-	border-radius: 3px;
-}
-.bg-sys{
-	background: #222e3c;
-}
-.logo-l{
-	padding: 20px;
-	background: #222e3c;
-	margin-top: 30%;
-}
-.kkn{
-	color: #555;
-	display: inline-block;
-	width: 0px;
-}
-.prog{
-	font-size: 0.9em;
-	color: #777;
-}
-.menuabs{
-	border: 2px solid #ddd;
-	width: 100%;
-	border-radius: 3px;
-}
-.ilo{
-	font-size: 40px;
-}
-.kecil-kanan{
-	font-size: 0.9em;
-	float: right;
-	text-align: right;
-	color: #777;
-}
-.kecil-kiri{
-	float: left;
-	color: #777;
-}
-@media only screen and (max-width: 768px) {
-	.prog, .tb-kecil{
-		margin-bottom: 10px;
-	}
-	.transaksi-form{
-		width: 100%;
-	}
-}
-
-
-ul.timeline-3 {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline-3:before {
-    content: ' ';
-    background: #fd6415;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 1px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline-3 > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline-3 > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #fd6415;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-.timeline-3 a{
-	color: #fd6415;
-	font-weight: bold;
-}
-.timeline-3 span{
-	display: block;
-}
-
-
-ul.timeline-2 {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline-2:before {
-    content: ' ';
-    background: #1cbc03;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 1px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline-2 > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline-2 > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #1cbc03;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-.timeline-2 a{
-	color: #1cbc03;
-	font-weight: bold;
-}
-.timeline-2 span{
-	display: block;
-}
-
-ul.timeline-1 {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline-1:before {
-    content: ' ';
-    background: #2196f3;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 1px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline-1 > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline-1 > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #2196f3;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-.timeline-1 a{
-	color: #2196f3;
-	font-weight: bold;
-}
-.timeline-1 span{
-	display: block;
-}
-
-.bg-orange{
-	/*background: #f99a56;*/
-}
-.hijau{
-	color: green !important;
-}
-
-.table th a{
-	color: #555;
-}
-
-.filter-bulan a{
-	float: left;
-	text-decoration: none;
-	padding: 5px 15px;
-	color: #000;
-	/*width: 25%;*/
-	text-align: center;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	border-left: 1px solid #fff;
-}
-.filter-bulan .kiri ul li a{
-	background: #fff;
-	border: 0;
-	color: #555;
-	display: block;
-	float: none;
-	text-align: left;
-}
-.filter-bulan .kiri ul li a:hover{
-	background: #ddd;
-}
-
-.filter a{
-	/*float: left;*/
-	text-decoration: none;
-	padding: 5px 15px;
-	color: #000;
-	/*width: 25%;*/
-	text-align: center;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	border-left: 1px solid #fff;
-}
-.filter ul li a{
-	background: #fff;
-	border: 0;
-	color: #555;
-	display: block;
-	float: none;
-	/*padding: 10px;*/
-	text-align: left;
-}
-.filter ul li a:hover{
-	background: #f0f0f0;
-}
-
-.cs{
-	background: #fff;
-	padding: 20px;
-	margin-bottom: 10px;
-	box-shadow: 0 .145rem .15rem 0 rgba(98,99,99,.2);
-}
-.cs h5, .cs span{
-	/*font-weight: bold;*/
-	color: #777;
-}
-.cs b{
-	display: block;
-	color: #555;
-	margin-bottom: 5px;
-}
-.harga{
-	display: block;
-	text-align: right;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-.harga span{
-	font-size: 0.7em;
-	display: block;
-	font-weight: normal;
-}
-.radio-list{
-
-}
-.radio-list input{
-    display: inline-block !important;
-    width: 40px !important;
-    margin-top: 2px !important;
-    float: left;
-    margin-left: -12px;
-}
-.radio-list label{
-    width: 100px !important;
-}
-.radio-list label.control-label{
-	width: 300px !important;
-}
-.radio-list input{
-    display: inline-block !important;
-    width: 40px !important;
-    margin-top: 2px !important;
-    float: left;
-    margin-left: -12px;
-}
-.radio-list label{
-    width: 100px !important;
-}
-
-.diag{
-	width: 300px;
-	height: 300px;
-	color: #fff;
-	background: #1bbd2f;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-.diag-text{
-	color: #fff;
-	margin: 0 auto;
-	text-align: center;
-	padding: 30px;
-	font-size: 70px;
-	font-weight: bold;
 }
